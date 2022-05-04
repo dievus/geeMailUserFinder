@@ -10,7 +10,7 @@ geeMailUserFinder is used for identifying valid Gmail accounts without the risk 
 
 
 ## Usage
-##### Installing Oh365UserFinder
+##### Installing geeMailUserFinder
 ```git clone https://github.com/dievus/geeMailUserFinder.git```
 
 ##### Change directories to geeMailUserFinder and run:
