@@ -3,7 +3,7 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M03Q2JN)
 
 <p align="center">
-  <img src="https://github.com/dievus/Oh365UserFinder/blob/main/images/geeMailUserFinder.jpg" />
+  <img src="https://github.com/dievus/GeeMailUserFinder/blob/main/images/geeMailUserFinder.jpg" />
 </p>
 
 geeMailUserFinder is used for identifying valid Gmail accounts without the risk of account lockouts. The tool parses responses to identify if a cookie is issued for valid accounts, and responds appropriately if the user is valid. 
