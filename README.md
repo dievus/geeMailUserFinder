@@ -20,7 +20,7 @@ Note that on occasion you may find that an email account that returns valid is n
 
 This will run the install script to add necessary dependencies to your system.
 
-```python3 oh365UserFinder.py -h```
+```python3 geeMailUserFinder.py -h```
 
 ##### This will output the help menu, which contains the following flags:
 
@@ -37,7 +37,7 @@ python3 geeMailUserFinder.py -e test@test.com
 ```python3 geeMailUserFinder.py -r emails.txt -c validemails.csv -t 30```
 
 ### ---Validate a list of emails and timeout between requests---
-```python3 Oh365UserFinder.py -r emails.txt -t 30```
+```python3 geeMailUserFinder.py -r emails.txt -t 30```
 
 ### ---Validate a list of emails using verbose mode---
 ```python3 geeMailUserFinder.py -r emails.txt -v```
