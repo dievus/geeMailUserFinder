@@ -8,6 +8,8 @@
 
 geeMailUserFinder is used for identifying valid Gmail accounts without the risk of account lockouts. The tool parses responses to identify if a cookie is issued for valid accounts, and responds appropriately if the user is valid. 
 
+Note that on occasion you may find that an email account that returns valid is not actual valid. This is likely due to the username not being permitted in the Gmail system, and I believe they issue a cookie for those as a way to prevent them.
+
 
 ## Usage
 ##### Installing geeMailUserFinder
