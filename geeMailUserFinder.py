@@ -54,7 +54,7 @@ python3 geeMailUserFinder.py -r emails.txt -v\n
         '-v', '--verbose', help='Verbose mode', action='store_true')
     opt_parser.add_argument('-u', '--userlist', help='Reads usernames from file')
     opt_parser.add_argument('-d', '--domain', help='Uses manually entered domain.')
-    opt_parser.add_argument('-c', '--checkdomain', help='Checks if domain is valid.', action='store_true')
+    opt_parser.add_argument('-c', '--checkdomain', help='Checks if domain is valid. Requires -d <domain>', action='store_false')
     global args
     args = opt_parser.parse_args()
     if len(sys.argv) == 1:
@@ -62,14 +62,22 @@ python3 geeMailUserFinder.py -r emails.txt -v\n
         opt_parser.exit()
 
 def handler():
+    if args.read and args.userlist and args.email is not None or args.read and args.userlist is not None:
+        print(fail + '\n[-] Please select only one option and try again.')    
+        sys.exit()
     if args.email is not None:
         single_test()
     if args.read is not None:
         gmail_test()
     if args.userlist is not None:
         gmail_users()
-    if args.checkdomain is not None and args.email is None and args.read is None and args.userlist is None:
+    if args.checkdomain is not None and args.domain is None:
+        print(fail + '\n[-] Please enter a domain to check. -c -d <domain>')
+        sys.exit()
+    if args.checkdomain is not None and args.domain is not None:    
         domain_test()
+    
+
 
 
 def single_test():
