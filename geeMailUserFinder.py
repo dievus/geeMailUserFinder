@@ -74,7 +74,7 @@ def handler():
     if args.checkdomain is not None and args.domain is None:
         print(fail + '\n[-] Please enter a domain to check. -c -d <domain>')
         sys.exit()
-    if args.checkdomain is not None and args.domain is not None:    
+    if args.checkdomain is not None and args.domain is not None and args.email is None:    
         domain_test()
     
 
