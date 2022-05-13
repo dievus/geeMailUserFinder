@@ -33,9 +33,6 @@ python3 geeMailUserFinder.py -e test@test.com
 ### ---Validate a list of emails, write to file and timeout between requests---
 ```python3 geeMailUserFinder.py -r emails.txt -w validemails.txt -t 30```
 
-### ---Validate a list of emails and write to CSV---
-```python3 geeMailUserFinder.py -r emails.txt -c validemails.csv -t 30```
-
 ### ---Validate a list of emails and timeout between requests---
 ```python3 geeMailUserFinder.py -r emails.txt -t 30```
 
